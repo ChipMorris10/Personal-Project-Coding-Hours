@@ -13,6 +13,7 @@ Statistical breakdown of coding hours to include:
 -Max hours study on a given day,
 - Min hours study on a given day,
 - Miles walked to/from Galvanize
+
 Photo gallery
 Github repo
 RSS feeds
