@@ -1,11 +1,10 @@
-#Title:
-##Hours of Coding
+#Title: Hours of Coding
 
-##Purpose:
+###Purpose:
 Keep a running total of the number of hours I spend coding, pictures of what's happening in and around Galvanize, my link to Github, RSS feed with tech news and Galvanize updates.
 with a statistical breakdown showing:
 
-##Key features will include:
+###Key features will include:
 Statistical breakdown of coding hours to include:
     *Avg study time S-S,
     *Avg stydy time M-F,
@@ -18,15 +17,15 @@ Photo gallery
 Github repo
 RSS feeds
 
-##Technology used:
+###Technology used:
 HTML
 CSS
 JavaScript
 jQuery
 
-##Foreseen Difficulties:
+###Foreseen Difficulties:
 *Lots of nerves - am I getting over my head???*
 
-##Stretch Goals - completed down the road:
+###Stretch Goals - completed down the road:
 RSS Feeds
 Updating the page to make it more interesitng
