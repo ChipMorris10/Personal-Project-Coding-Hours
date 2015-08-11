@@ -15,7 +15,9 @@ Statistical breakdown of coding hours to include:
 - Miles walked to/from Galvanize
 
 Photo gallery
+
 Github repo
+
 RSS feeds
 
 ###Technology used:
