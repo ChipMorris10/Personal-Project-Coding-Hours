@@ -32,3 +32,5 @@ jQuery
 ###Stretch Goals - completed down the road:
 RSS Feeds
 Updating the page to make it more interesitng
+
+<!-- ![wireframe](./picture.jpg) -->
