@@ -39,7 +39,6 @@ Keep a running total of the number of hours I code, include a picture carousal o
 
 ### Wire framing
 * I couldn't see how to load images so *my* wire frame is available on files on my computer
-* ![GitHub Logo](/desktop/screenshot.png
-* ![GitHub Logo](/images/logo.png)
+
 
 
