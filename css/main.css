@@ -1,3 +1,45 @@
+/*changes background color of menu on hover*/
+#menu a:hover {
+    color: #F90;
+}
+
+/*adds color and padding to nav bar items */
+.nav-pills{
+    text-decoration: none ;
+    color: #00F;
+    padding: 8px 8px 8px 8px;
+}
+
+/*center the <h1> text*/
+h1 {
+    text-align: center;
+}
+
+/*positions gSchool items */
+.galvanizemins{
+    position: absolute;
+    right: 150px;
+    width: 300px;
+    border:3px solid black;
+    padding: 8px;
+    background-color: tan;
+    margin-top: 100px;
+}
+
+/**/
+.aboutme li{
+    text-align:left;
+}
+
+
+
+
+
+/*I'm not sure I need any of these items*/
+/*#menu{
+    text-align: center;
+}*/
+
 ./*#menu {
     width: 500px;
     height: 35px;
@@ -27,39 +69,3 @@ padding: 70px;
     padding: 8px 8px 8px 8px;
 }
 */
-
-/*#menu{
-    text-align: center;
-}*/
-
-#menu a:hover {
-    color: #F90;
-}
-
-.nav-pills{
-    text-decoration: none ;
-    color: #00F;
-    padding: 8px 8px 8px 8px;
-}
-
-#menu a:hover {
-    color: #F90;
-}
-
-h1 {
-    text-align: center;
-}
-
-.galvanizemins{
-    position: absolute;
-    right: 150px;
-    width: 300px;
-    border:3px solid black;
-    padding: 8px;
-    background-color: tan;
-    margin-top: 100px;
-}
-
-.aboutme li{
-    list-style-type: none;
-}
