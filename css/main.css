@@ -1,5 +1,17 @@
+/*Body controls*/
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body{
+    background-color: #fafafa;
+    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    margin: 0 0 100px;  /*bottom is equal to footer height*/
+}
+
 /*changes background color of menu on hover*/
-#menu a:hover {
+#menu a:hover{
     color: #F90;
 }
 
@@ -11,25 +23,61 @@
 }
 
 /*center the <h1> text*/
-h1 {
+h1{
     text-align: center;
+}
+
+/*underline all <h3>*/
+h3{
+    text-decoration: underline;
 }
 
 /*positions gSchool items */
 .galvanizemins{
     position: absolute;
     right: 150px;
-    width: 300px;
+    width: 350px;
     border:3px solid black;
     padding: 8px;
-    background-color: tan;
+    background-color: #FAF3FF;
     margin-top: 100px;
 }
 
-/**/
+/*About Me*/
 .aboutme li{
     text-align:left;
 }
+
+
+
+
+/*Header controls*/
+#headerBar {
+    height: 60px;
+    background: black;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1
+}
+
+/*Footer Controls*/
+#footerBar {
+    height: 100px;
+    background-color: black;
+    position: absolute;              /* THE POSITIONING ISN'T WORKING LIKE I WANT */
+    bottom: 0;
+    width: 100%;
+    left: 0;
+
+}
+
+/*remove bullets from il's*/
+li{
+    text-decoration: none;
+}
+
+
 
 
 
