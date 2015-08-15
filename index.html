@@ -3,16 +3,14 @@
 <head>
     <title>Personal Project - Coding Hours</title>
 
-
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-
 
 </head>
 <body>
 
-<div id="headerBar">
   <!-- navigation bar items -->
+<div id="headerBar">
   <header>
     <nav>
       <div id="menu">
@@ -27,50 +25,64 @@
   </header>
 </div>
 
+<h1>How Many Hours Do <em>You</em> Code?</h1>
 
-<div class="outsideContainer">
+<!-- picture at top of page -->
+<hr>
+  <img src="img/Binary-Code.jpg" alt="Code Picture" height="200" width="1500">
+<hr>
 
-
-
-<img src="https://github.com/" alt="HTML5 Icon" style="width:128px;height:128px;">
-
-<h1>How Many Hours Can <em>You</em> Code?</h1>
-<!-- <img src="img/imgres.jpg" alt="CHIP'S IMG">  image format -->
-
-<div class="row">
-
-<div class="col-md-6">
-<!-- Minimum class time in gSchool -->
-  <aside  class="galvanizemins">
-    <h3>Minimum Time in gSchool</h3>
-      <p><strong>Weeks of Class: 24</strong></p>
-      <p><strong>Days of Class: 119</strong></p>
-      <p><strong>Hours of Class: 833</strong></p>
-  </aside>
+<!-- Bootstrap Table -->
+<div class="container myStudyHours">
+  <h2>My Study Hours</h2>
+  <table class="table table-condensed">
+    <thead>
+      <tr>
+        <th>Avg Hrs Study S-S</th>
+        <th>Avg Hrs Study M-F</th>
+        <th>Days Studying</th>
+        <th>Hours Studying</th>
+        <th>Max Hours /Day</th>
+        <th>Min Hours/Day</th>
+        <th>Miles Walked</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>9.1</td>
+        <td>10.4</td>
+        <td>40</td>
+        <td>365</td>
+        <td>13.5</td>
+        <td>2.0</td>
+         <td>96</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
-<div class="col-md-6">
-  <!-- My study statistics -->
-  <div id="stats">
-      <h3>Stats</h3>
-      <ul>
-        <li>Avg S-S</li>
-        <li>Avg M-F</li>
-        <li>Days of study</li>
-        <li>Hours of study</li>
-        <li>Max Hours</li>
-        <li>Min Hours</li>
-        <li>Miles walked</li>
-      </ul>
-  </div>
+<!-- Bootstrap Table I DON"T LIKE THE LAYOUT -->
+<div class="container galvanizeMin">
+  <h2>gSchool </h2>
+  <table class="table table-condensed">
+    <thead>
+      <tr>
+        <th>Weeks of Class</th>
+        <th>Days of Class</th>
+        <th>Hours of Class</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>24</td>
+        <td>119</td>
+        <td>834</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
-</div> <!-- end row div -->
-<!-- picture carousel -->
-<div id="pictures">
-<ul><li>Pictures go here</li></ul>
 
-</div>
 
 <!-- Github link -->
 <div id="github">
@@ -86,10 +98,10 @@
     <h4>Professional Experience</h4>
       <h5>AIM Institute - 2012 - 2015</h5>
         <p><em>A not-for-profit membership organization whose mission is to promote technology and create brillian communities</em></p>
-            <ul><strong>Regional Manager - Denver</strong></ul>
+            <p><strong>Regional Manager - Denver</strong></p>
                <li>Opened up the Denver office and established relationships within the tech community</li>
                <li>Solely responsible for laying the groundwork to the office open</li>
-              <li><strong>Business Development Executive</strong></li>
+              <p><strong>Business Development Executive</strong></p>
               <li>Increased revenue intake 10 straight months - 2013</li>
               <li>Member of the Going National Committee</li>
               <li>Won sales incentives in months 4, 5, 7, and 9 - 2013</li>
@@ -103,10 +115,11 @@
     <p>1245 Humboldt #309, Denver, CO 80218</p>
     <p>303.646.7088</p>
     <p>Email <a href="mailto:goldcomac@mac..com">me</a>.</p>
+    <p>Envelope icon: <span class="glyphicon glyphicon-envelope"></span></p>
 
 </div>
 
-<!-- TAKE OUT -->
+
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -147,14 +160,53 @@
 </div>
 
 
-<!-- TAKE OUT -->
 
+
+
+
+<div class="jumbotron">
+  <h1>Contact Me</h1>
+  <p>Chip Morris</p>
+  <p>1245 Humboldt #309</p>
+  <p>Denver, CO 80218</p>
+  <p>303.646.7088</p>
+  <!-- <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p> -->
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- </div>         closes the opening <div> -->
 
 <div id="footerBar"></div>
 
 
-    <!-- closes the opening <div> -->
+
    <script type="text/javascript" src="config.json"></script>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
@@ -164,9 +216,5 @@
 </html>
 
 
-<!-- There's a bootstrap requirement. I don't know what I'm supposed to do -->
-<!-- Picture carousal -->
-<!-- divs and how to move my html around with css -->
-<!-- footer line -->
-<!-- adding pictures -->
+
 <!-- adding Github info -->
