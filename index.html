@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Personal Project - Coding Hours</title>
+    <title>Personal Project - Online Resume</title>
 
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
@@ -25,6 +25,7 @@
   </header>
 </div>
 
+
 <h1>How Many Hours Do <em>You</em> Code?</h1>
 
 <!-- picture at top of page -->
@@ -32,36 +33,7 @@
   <img src="img/Binary-Code.jpg" alt="Code Picture" height="200" width="1500">
 <hr>
 
-<!-- Bootstrap Table -->
-<div class="container myStudyHours">
-  <h2>My Study Hours</h2>
-  <table class="table table-condensed">
-    <thead>
-      <tr>
-        <th>Avg Hrs Study S-S</th>
-        <th>Avg Hrs Study M-F</th>
-        <th>Days Studying</th>
-        <th>Hours Studying</th>
-        <th>Max Hours /Day</th>
-        <th>Min Hours/Day</th>
-        <th>Miles Walked</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>9.1</td>
-        <td>10.4</td>
-        <td>40</td>
-        <td>365</td>
-        <td>13.5</td>
-        <td>2.0</td>
-         <td>96</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-<!-- Bootstrap Table I DON"T LIKE THE LAYOUT -->
+<!-- Bootstrap Table - gSchool info **** I DON"T LIKE THE LAYOUT  ****-->
 <div class="container galvanizeMin">
   <h2>gSchool </h2>
   <table class="table table-condensed">
@@ -82,69 +54,81 @@
   </table>
 </div>
 
-
+<!-- Bootstrap Table - my info-->
+<!-- Once we learn how, this will be updated live day by day. Right now the numbers are hard coded -->
+<div class="container myStudyHours">
+  <h2>My Study Hours</h2>
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th>Avg Hrs Study S-S</th>
+          <th>Avg Hrs Study M-F</th>
+          <th>Days Studying</th>
+          <th>Hours Studying</th>
+          <th>Max Hours /Day</th>
+          <th>Min Hours/Day</th>
+          <th>Miles Walked</th>
+        </tr>
+      </thead>
+    <tbody>
+      <tr>
+        <td>9.1</td>
+        <td>10.4</td>
+        <td>40</td>
+        <td>365</td>
+        <td>13.5</td>
+        <td>2.0</td>
+         <td>96</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 <!-- Github link -->
 <div id="github">
     <h3>My Github Repo</h3>
-    <a href="https://github.com/ChipMorris10" target="_blank"> My Github</a>
-    <p>Visit my Github Repo to see all of my published work.</p>
+    <p>To date, I have had commits:
+    <a href="https://github.com/ChipMorris10" target="_blank"> Visit my Github account</a>
 </div>
 
-<!-- About Me information -->
-<div id="aboutme">
-  <h3>About Me</h3>
-  <img src="img/IMG_2492.jpg" alt="Some Picture">
-    <h4>Professional Experience</h4>
-      <h5>AIM Institute - 2012 - 2015</h5>
-        <p><em>A not-for-profit membership organization whose mission is to promote technology and create brillian communities</em></p>
-            <p><strong>Regional Manager - Denver</strong></p>
-               <li>Opened up the Denver office and established relationships within the tech community</li>
-               <li>Solely responsible for laying the groundwork to the office open</li>
-              <p><strong>Business Development Executive</strong></p>
-              <li>Increased revenue intake 10 straight months - 2013</li>
-              <li>Member of the Going National Committee</li>
-              <li>Won sales incentives in months 4, 5, 7, and 9 - 2013</li>
-              <li>Responsible for making 50 calls or completing 120 minutes of talk time daily</li>
+<!-- School and Work Information -->
+<div id="schoolWorkHistory">
+  <h3>School & Work History</h3>
+    <img class="logos" src="img/gschool-logo.png" alt="gSchool logo" height="60" width="180" target="_blank"></a>
+    <img class="logos" src="img/UNO.jpg" alt="UNOl logo" height="60" width="180" target="_blank"></a>
+    <img class="logos" src="img/Northeastern_Illinois_University.png" alt="Northeastern_Illinois_University logo" height="60" width="180" target="_blank"></a>
+    <img class="logos" src="img/Pepsi_logo.gif" alt="Pepsi logo" height="60" width="120" target="_blank"></a>
+    <img class="logos" src="img/aim-logo.png" alt="AIM logo" height="60" width="180" target="_blank"></a>
 </div>
 
-<!-- Contact Information -->
-<div id="contactinfo">
-<h3>Concact Information</h3>
-    <p><strong>Chip Morris</strong></p>
-    <p>1245 Humboldt #309, Denver, CO 80218</p>
-    <p>303.646.7088</p>
-    <p>Email <a href="mailto:goldcomac@mac..com">me</a>.</p>
-    <p>Envelope icon: <span class="glyphicon glyphicon-envelope"></span></p>
-
-</div>
+<br>
 
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
-    <li data-target="#imgres.jpg" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
     <li data-target="#myCarousel" data-slide-to="1"></li>
     <li data-target="#myCarousel" data-slide-to="2"></li>
     <li data-target="#myCarousel" data-slide-to="3"></li>
   </ol>
 
   <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
+  <div class="inner" role="listbox">
     <div class="item active">
-      <img src="img/imgres.jpg" alt="CHIP'S IMG">
+      <img src="img/gschool.jpg" alt="gSchool picture" height="324" px width="300" px>
     </div>
 
     <div class="item">
-      <img src="img/chania2.jpg" alt="Chania">
+      <img src="img/Sarah.jpg" alt="Sarah" height="324" width="300">
     </div>
 
     <div class="item">
-      <img src="img/flower.jpg" alt="Flower">
+      <img src="img/Ben.jpg" alt="Ben" height="324" width="300">
     </div>
 
     <div class="item">
-      <img src="img/flower2.jpg" alt="Flower">
+      <img src="img/Luis.jpg" alt="Luis" height="324" width="300">
     </div>
   </div>
 
@@ -164,14 +148,97 @@
 
 
 
-<div class="jumbotron">
-  <h1>Contact Me</h1>
-  <p>Chip Morris</p>
-  <p>1245 Humboldt #309</p>
-  <p>Denver, CO 80218</p>
-  <p>303.646.7088</p>
-  <!-- <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Picture carousel -->
+<!-- <div id="myCarousel" class="carousel slide" data-ride="carousel"> -->
+  <!-- Indicators -->
+  <!-- <ol class="carousel-indicators">
+    <li data-target="img/gSchool.jpg" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+  </ol> -->
+
+  <!-- Wrapper for slides -->
+  <!-- <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="img/imgres.jpg" alt="CHIP'S IMG">
+    </div>
+
+    <div class="item">
+      <img src="img/chania2.jpg" alt="Chania">
+    </div>
+
+    <div class="item">
+      <img src="img/flower.jpg" alt="Flower">
+    </div>
+
+    <div class="item">
+      <img src="img/flower2.jpg" alt="Flower">
+    </div>
+  </div -->>
+
+  <!-- Left and right controls -->
+  <!-- <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div> -->
+
+
+
+
+<!-- Bootstrap Jumbotron - Contact Information -->
+<div class="jumbotron" style="width: 800px">
+  <div class="row">
+    <div class="col-md-4">
+    <img src="img/Jack's 70th.jpg" alt="Chip Picture" height="300"width="324">
+      </div>
+      <div class="col-md-8 text-muted">
+        <div class="page-header">
+          <div class="center">
+            <p>Chip Morris</p>
+            <p>1245 Humboldt #309</p>
+            <p>Denver, CO 80218</p>
+            <p>303.646.7088</p>
+
+            <p>Email <a href="mailto:goldcomac@mac..com">me</a>.</p>
+    <p>Envelope icon: <span class="glyphicon glyphicon-envelope"></span></p>
+
+    </div>
 </div>
+</div>
+<!-- </div> -->
+<!-- </div> -->
+
+
 
 
 

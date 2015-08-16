@@ -39,6 +39,20 @@ h1 {
     border-width: 1px;
 }
 
+.jumbotron {
+    padding-left: 30px;
+    padding-right: 60px;
+    height: 10px;  /*WHAT IS THIS DOING? It seems to lock it to the footer, but changing the number from 10px to 100px doesn't seem to make a difference*/
+}
+
+.logos {
+    padding-right: 50px;
+}
+
+.jumbotron p {
+    color: black;
+    text-align: center;
+}
 /*underline all <h3>*/
 h3 {
     text-decoration: underline;
