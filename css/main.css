@@ -9,15 +9,21 @@ body {
     background-color: #fafafa;
     font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
     margin: 0 0 100px;  /*bottom is equal to footer height*/
+
 }
-/*adds color and padding to nav bar items */
+/*Adds color and padding to nav bar items */
 .nav-pills {
     text-decoration: none ;
     color: #00F;
     padding: 20px 20px 20px 20px;
 }
 
-/*center the <h1> text*/
+/*Changes background color of menu on hover*/
+#headerBar .active  a:hover {
+    background-color: #F90;
+}
+
+/*Center the <h1> text*/
 h1 {
     text-align: center;
     color: white;
@@ -34,38 +40,43 @@ h1 {
     z-index: -1
 }
 
+/*Border around gSchool hours*/
 .container {
     border-style: solid;
     border-width: 1px;
 }
 
-.jumbotron {
-    padding-left: 30px;
-    padding-right: 60px;
-    height: 10px;  /*WHAT IS THIS DOING? It seems to lock it to the footer, but changing the number from 10px to 100px doesn't seem to make a difference*/
-}
-
+/*Logo spacing*/
 .logos {
     padding-right: 50px;
 }
 
+/*Bootstrap Jumbotron controls*/
+.jumbotron {
+    padding-left: 30px;
+    padding-right: 60px;
+    height: 10px;  /*WHAT IS THIS DOING? It seems to lock it to the footer, but changing the number from 10px to 100px doesn't seem to make a difference*/
+    right: 300px;
+}
+
 .jumbotron p {
     color: black;
-    text-align: center;
+    text-align: right;
 }
-/*underline all <h3>*/
+/*Underline all <h3>*/
 h3 {
     text-decoration: underline;
 }
 
-/*changes background color of menu on hover*/
-#headerBar .active  a:hover {
-    background-color: #F90;
-}
 
 /*About Me*/
 .aboutme li {
     text-align:left;
+}
+
+#socialMedia {
+    height: 100px;
+    width: 100px;
 }
 
 /*Footer Controls*/
@@ -77,11 +88,4 @@ h3 {
     width: 100%;
     left: 0;
 }
-
-
-
-
-
-
-
 
