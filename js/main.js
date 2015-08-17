@@ -4,6 +4,14 @@ var endDate = new Date().toISOString();
 console.log(endDate);
 
 $(document).on('ready', function() {
+
+
+    $("#schoolWorkHistory>a").click(function(){
+        $(".logos").hide();
+        $('.resume').show();
+    });
+
+
     $.ajax({
         url: "https://api.github.com/authorizations",
         method:"POST",
@@ -24,6 +32,7 @@ $(document).on('ready', function() {
         updateGithubCommits();
     });
     console.log('sanity check!');
+
 });
 
 function updateGithubCommits() {

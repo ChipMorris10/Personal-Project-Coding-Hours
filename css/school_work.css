@@ -1,31 +1,36 @@
+/*body styling*/
+body {
+    font-family: Big Caslon,Book Antiqua,Palatino Linotype,Georgia,serif;
+}
+
+h1 {
+    text-align: center;
+}
+
 /*gSchool  styling*/
 #gSchool {
     margin-left: 18px;
-    background-color: #F2A42E;
 }
 
 /*AIM styling*/
 #AIM {
     margin-left: 18px;
-    background-color: #56BBF8;
+    float: right;
 }
 
 /*PBG styling*/
 #PBG {
     margin-left: 18px;
-    background-color: #2B33F8;
 }
 
 /*UNO styling*/
 #UNO {
     margin-left: 18px;
-    background-color: #FF4A3B;
 }
 
 /*NIU styling*/
 #NIU {
     margin-left: 18px;
-    background-color: #5177F8
 }
 
 /*Volunteer styling*/
