@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Personal Project - Online Resume</title>
+<title>Personal Project - Online Resume</title>
 
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
 
 </head>
 <body>
@@ -15,9 +15,9 @@
     <nav>
       <div id="menu">
         <ul class="nav nav-pills">
-           <li class="active"><a href="#">Home</a></li>
-          <li><a href="codingstats.html">Coding Stats</a></li>
-          <li><a href="aboutme.html">About Me</a></li>
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#github">Github</a></li>
+          <li><a href="#showResume">Work History</a></li>
           <li><a href="contactme.html">Contact</a></li>
         </ul>
         </div>
@@ -26,7 +26,7 @@
 </div>
 
 <!-- Title -->
-<h1>How Many Hours Do <em>You</em> Code?</h1>
+<h1>gSchool Coding Hours &amp; Resume</h1>
 
 <!-- Image at top of page -->
 <hr>
@@ -84,6 +84,46 @@
   </table>
 </div>
 
+<br>
+
+<!-- Bootstrap Picture Carousel -->
+<center>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+
+    <!-- Picture -->
+    <div class="item active">
+      <img src="img/gschool2.jpg" alt="gSchool picture" height="324" px width="300" px>
+    </div>
+
+    <!-- Picture -->
+    <div class="item">
+      <img src="img/Sarah.jpg" alt="Sarah" height="324" width="300">
+    </div>
+
+    <!-- Picture -->
+    <div class="item">
+      <img src="img/Ben.jpg" alt="Ben" height="324" width="300">
+    </div>
+
+    <!-- Picture -->
+    <div class="item">
+      <img src="img/Luis.jpg" alt="Luis" height="324" width="300">
+    </div>
+
+  </div> <!-- Closes class="carousel-inner" -->
+  </div> <!-- Closes id="myCarousel"-->
+  </center>
+
 <!-- Github link -->
 <div id="github">
   <h3>My Github Repo</h3>
@@ -91,127 +131,159 @@
       <a href="https://github.com/ChipMorris10" target="_blank"> Visit my Github account</a>
 </div>
 
+
+<h3>School &amp; Work History</h3>
+
+<button type="button" id="showResume" >View my resume</button>
+
 <!-- School and Work Information -->
 <div id="schoolWorkHistory">
-  <h3>School &amp; Work History</h3>
-    <a> Click to view my school and work history</a>
-      <img class="logos" src="img/gschool-logo.png" alt="gSchool logo" height="60" width="180" target="_blank">
-      <img class="logos" src="img/UNO.jpg" alt="UNOl logo" height="60" width="180" target="_blank">
-      <img class="logos" src="img/Northeastern_Illinois_University.png" alt="Northeastern_Illinois_University logo" height="60" width="180" target="_blank">
-      <img class="logos" src="img/Pepsi_logo.gif" alt="Pepsi logo" height="60" width="120" target="_blank">
-      <img class="logos" src="img/aim-logo.png" alt="AIM logo" height="60" width="180" target="_blank">
-      <div class="resume" style="display: none">Can you see me?</div>
+  <br>
+<br>
+
+<h2><strong>Work &amp; School History</strong></h2>
+
+<!-- gSchool experience -->
+<img class="logos" src="img/gschool-logo.png" alt="gSchool logo">
+<div id="gSchool">
+  <p>Denver, CO</p>
+  <p>July - December 2015</p>
+  <p><em>A 24 week Full Stack Immersive program</em></p>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Javascript</li>
+      <li>JQuery</li>
+      <li>API</li>
+      <li>OOP</li>
+    </ul>
 </div>
+
+<!-- AIM experience -->
+<div id="AIM">
+<img class="logos" src="img/aim-logo.png" alt="AIM logo">
+  <p>Omaha, NE &amp; Denver, CO</p>
+  <p>April 2012 - June 2015</p>
+  <p><em>A not-for-profit membership organization whose mission is to promote technology and create brillian communities</em></p>
+  <p><strong>Regional Manager - Denver</strong></p>
+    <ul>
+      <li>Solely responsible for laying the groundwork to the Denver office open</li>
+      <li>Established relationships within the tech and school community</li>
+    </ul>
+  <p><strong>Business Development Executive</strong></p>
+    <ul>
+      <li>Increased revenue intake 10 straight months - 2013</li>
+      <li>Member of the Going National Committee</li>
+      <li>Won sales incentives in months 4, 5, 7, and 9 - 2013</li>
+      <li>Responsible for making 50 calls or completing 120 minutes of talk time daily</li>
+    </ul>
+</div>
+
+<!-- PBG experience -->
+<div id="PBG">
+<img class="logos" src="img/Pepsi_logo.gif" alt="Pepsi logo">
+  <p>Denver, CO &amp; Omaha, NE</p>
+  <p>1998 - 2009</p>
+  <p><em>The world's largest manufacturer, seller, and distributor of Pepsi-Cola products</em></p>
+  <p><strong>FoodService Sales Manager</strong></p>
+    <ul>
+      <li>Managed daily operations of sales team across three states</li>
+      <li>Managed non-retail business segments with sales in excess of $20 million annually</li>
+      <li>Interviewed, hired, and mentored Sales Representatives</li>
+      <li>Grew volume and revenue growth 5%</li>
+      <li>Approved long-term customer contracts</li>
+      <li>Developed and executed vending initiative posting best results in Business Unit</li>
+      <li>Recognized with the "President's Circle of Excellence Award"</li>
+    </ul>
+  <p>Marketing Equipment Supervisor</p>
+    <ul>
+      <li>Supervised 14 equipment delivery and installation teams</li>
+      <li>Increased department morale as noted through Employee Insights survey</li>
+      <li>Established annual targets and productivity measures</li>
+    </ul>
+  <p>Key Account Manager</p>
+    <ul>
+      <li>Over-indexed 7.5% on revenue and grew fountain business by 52%</li>
+      <li>Four-time will of "Rules of the Road" for sales excellence</li>
+      <li>Top vending sales representative during 1st year of employment</li>
+    </ul>
+</div>
+
+<!-- UNO experience -->
+<div id="UNO">
+<img class="logos" src="img/UNO.jpg" alt="UNOl logo">
+  <p>Omaha, NE</p>
+  <p>2010-2011</p>
+  <p><em>Master's Degree in Secondary Education</em></p>
+    <ul>
+      <li>Completed 43 hours of study with a 3.68 GPA</li>
+    </ul>
+</div>
+
+<!-- NIU experience -->
+<div id="NIU">
+<img class="logos" src="img/Northeastern_Illinois_University.png" alt="Northeastern Illinois">
+  <p>Chicago, IL</p>
+    <ul>
+      <li>B.S. Policitcal Science</li>
+      <li>Minor in English</li>
+  </ul>
+</div>
+
+<!-- Volunteer experience -->
+<div id="Volunteer">
+<h3>Volunteer Work</h3>
+  <ul>
+    <li>Big Brothers, Big Sisters</li>
+    <li>Board Memeber, Omaha Restaurant Association</li>
+    <li>Junior Achievement</li>
+    <li>President, Golden Marlins Swim Team</li>
+    <li>Board Member, Shelton Elementary School</li>
+    </ul>
+</div>
+
+</div>   <!--Closes id="SchoolWorkHistory" SEE NOTE ABOVE-->
 
 <br>
 
-<!-- Bootstrap Picture Carousel -->
-<!-- <center>
-<div id="myCarousel" class="carousel slide" data-ride="carousel"> -->
-  <!-- Indicators -->
-<!--   <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-    <li data-target="#myCarousel" data-slide-to="3"></li>
-  </ol> -->
+<div class="col-md-8">
+<div class="page-header">
 
-  <!-- Wrapper for slides -->
-<!--   <div class="carousel-inner" role="listbox"> -->
-
-    <!-- Picture -->
-<!--     <div class="item active">
-      <img src="img/gschool2.jpg" alt="gSchool picture" height="324" px width="300" px>
-    </div> -->
-
-    <!-- Picture -->
-<!--     <div class="item">
-      <img src="img/Sarah.jpg" alt="Sarah" height="324" width="300">
-    </div> -->
-
-    <!-- Picture -->
-<!--     <div class="item">
-      <img src="img/Ben.jpg" alt="Ben" height="324" width="300">
-    </div> -->
-
-    <!-- Picture -->
-<!--     <div class="item">
-      <img src="img/Luis.jpg" alt="Luis" height="324" width="300">
-    </div> -->
-
-<!--   </div> Closes class="carousel-inner"
-  </div>
-  </center> -->
-
-  <!-- Left and right controls -->
-<!--   <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-
-  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div> -->
-
-<!-- Bootstrap Jumbotron - Contact Information -->
-<!-- <center> -->
-<!--   <div class="jumbotron" style="width: 500px">
-    <div class="row">
-      <div class="col-md-4">
-        <img src="img/halloween.jpg" alt="Chip Picture" height="200" width="200">
-      </div>
-    </div> -->
-   <!--  </center> -->
-
-      <div class="col-md-8">
-        <div class="page-header">
-          <!-- <div class="center"> -->
-            <p>Chip Morris</p>
-            <p>1245 Humboldt #309</p>
-            <p>Denver, CO 80218</p>
-            <p>303.646.7088</p>
-            <p>Email <a href="mailto:goldcomac@mac..com">me</a>.</p>
-            <p>Envelope icon: <span class="glyphicon glyphicon-envelope"></span></p>
-          <!-- </div> -->
-        </div>
-      </div> <!--Closes class="col-md-8-->
-      </div> <!--Closes class="jumbotron"-->
-
-
-
-<!-- ADD LATER??????????? -->
-
-<!-- Social media logos -->
-<div id="socialMedia">
+<p>Chip Morris</p>
+<p>1245 Humboldt #309</p>
+<p>Denver, CO 80218</p>
+<p>303.646.7088</p>
+<p>Email <a href="mailto:goldcomac@mac..com">me</a>.</p>
+<p>Envelope icon: <span class="glyphicon glyphicon-envelope"></span></p>
   <img src="img/facebook.png" alt="Facebook logo">
   <img src="img/twitter.png" alt="Twitter logo">
   <img src="img/linkedin.png" alt="LinkedIn logo">
+
+</div> <!--Closes class="page-header"-->
+</div> <!--Closes class="col-md-8-->"
+
+<!-- Adds footer to page -->
+<div id="footerBar">
+  <a href="#">Back To Top</a>
 </div>
 
-<!-- ADD LATER??????????? -->
 
-<!-- I don't know what this does -->
-<div id="footerBar"></div>
+<script type="text/javascript" src="config.json"></script>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 
-
-    <script type="text/javascript" src="config.json"></script>
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-
-  </body>
+</body>
 </html>
 
 
 
 <!-- adding Github info -->
-<!-- picture carousel: 1) move in sliders 2) best way to size pictures/logos-->
+
 <!-- look at opening and closing divs with class="jumbotron" -->
 <!-- keep Jumbotron or remove? What's going on with it? -->
-<!-- add social media logos -->
+
 <!-- add walking gif?
 <div style="max-width: 500px;" id="_giphy_XGnWMiVXL87Xa"></div><script>var _giphy = _giphy || []; _giphy.push({id: "XGnWMiVXL87Xa",w: 400, h: 400});var g = document.createElement("script"); g.type = "text/javascript"; g.async = true;g.src = ("https:" == document.location.protocol ? "https://" : "http://") + "giphy.com/static/js/widgets/embed.js";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(g, s);</script>
 OR

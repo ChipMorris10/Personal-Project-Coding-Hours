@@ -5,11 +5,45 @@ console.log(endDate);
 
 $(document).on('ready', function() {
 
+$('#schoolWorkHistory').hide();
 
-    $("#schoolWorkHistory>a").click(function(){
-        $(".logos").hide();
+    $("#schoolWorkHistory").on("click", function() {
+        // $(".logos").hide();         // I DON'T THINK THIS IS NEEDED ANYMORE SINCE I GOT RID OF ALL THE LOGOS
         $('.resume').show();
     });
+
+    $("#showResume").on("click", function() {
+        $('#schoolWorkHistory').fadeIn("slow");
+    });
+
+    // $("#showResume").on("click", function() {
+    //     $('#schoolWorkHistory').fadeOut("slow");
+    // });
+
+
+
+
+
+// Smooth scrolling
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+
+
+
+
+
 
 
     $.ajax({

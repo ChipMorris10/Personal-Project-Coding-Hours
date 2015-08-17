@@ -23,13 +23,18 @@ body {
     padding: 20px 20px 20px 20px;
 }
 
-/*Center the <h1> text*/
+/*h1 controls*/
 h1 {
     text-align: center;
     color: white;
     padding-top: 1px;
 }
 
+/*h2 controls*/
+h2 {
+    text-align: center;
+    text-decoration: underline;
+}
 /*Header controls*/
 #headerBar {
     height: 60px;
@@ -46,9 +51,12 @@ h1 {
     border-width: 1px;
 }
 
-/*Logo spacing*/
+/*Logo controls*/
 .logos {
-    padding-right: 50px;
+    /*padding-right: 50px;*/
+    height: 35px;
+    width: 60px;
+
 }
 
 /*Github controls*/
@@ -59,43 +67,51 @@ h1 {
 /*School & Work History controls*/
 #schoolWorkHistory {
     margin-left: 10px;
+    border:solid;
+}
+
+/*Container controls*/
+#container {
+      border-style: solid;
+      border-width: 1px;
+}
+
+#showResume {
+    border-radius: 25px
 }
 
 /*Bootstrap Jumbotron controls*/
-.jumbotron {
+/*.jumbotron {
     padding-left: 30px;
     padding-right: 60px;
-    height: 10px;  /*WHAT IS THIS DOING? It seems to lock it to the footer, but changing the number from 10px to 100px doesn't seem to make a difference*/
+    height: 10px;  WHAT IS THIS DOING? It seems to lock it to the footer, but changing the number from 10px to 100px doesn't seem to make a difference
     right: 300px;
-}
+}*/
 
-.jumbotron p {
+/*.jumbotron p {
     color: black;
     text-align: right;
-}
-/*Underline all <h3>*/
-h3 {
+}*/
+
+/*h3 controls*/
+#schoolWorkHistory {
     text-decoration: underline;
+    margin-left: 10px;
 }
 
-
-/*About Me*/
+/*About  Me controls*/
 .aboutme li {
     text-align:left;
 }
 
-/*#socialMedia {
-    height: 100px;                      /*ADD LATER?
-    width: 100px;
-}*/
-
-/*Footer Controls*/
+/*Footer controls*/
 #footerBar {
-    height: 30px;
+    height: 25px;
     background-color: black;
     position: absolute;
     bottom: 0;
     width: 100%;
     left: 0;
+    text-align: center;
 }
 
