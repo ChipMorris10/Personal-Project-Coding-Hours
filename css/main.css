@@ -9,41 +9,43 @@ body {
     background-color: #fafafa;
     font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
     margin: 0 0 100px;  /*bottom is equal to footer height*/
-}
 
-/*Changes background color of menu on hover*/
-#headerBar .active  a:hover {
-    background-color: #F90;
 }
-
 /*Adds color and padding to nav bar items */
 .nav-pills {
-    text-decoration: none ;
     color: #00F;
     padding: 20px 20px 20px 20px;
 }
 
-/*h1 controls*/
+/*Changes background color of menu on hover*/
+/*#headerBar .active  a:hover {
+    background-color: #F90;
+}*/
+
+/*Center the <h1> text*/
 h1 {
     text-align: center;
     color: white;
     padding-top: 1px;
 }
 
-/*h2 controls*/
-h2 {
-    text-align: center;
-    text-decoration: underline;
+.titleClass {
+    display: inline-block;
+    color:white;
+    font-size: 2.0em;
+    margin-left: 15px;
 }
+
 /*Header controls*/
 #headerBar {
     height: 60px;
     background: black;
-    position: absolute;
     top: 0;
     width: 100%;
     z-index: -1
 }
+
+
 
 /*Border around gSchool hours*/
 .container {
@@ -51,62 +53,52 @@ h2 {
     border-width: 1px;
 }
 
-/*Logo controls*/
+/*Logo spacing*/
 .logos {
     /*padding-right: 50px;*/
-    height: 35px;
-    width: 60px;
-
+    height: 50px;
+    width:70px;
+    margin-left: 15px;
 }
 
-/*Github controls*/
-#github {
-    margin-left: 10px;
-}
-
-/*School & Work History controls*/
 #schoolWorkHistory {
-    margin-left: 10px;
-    border:solid;
-}
+    border-style: solid;
+    border-width: 2px;
+    margin-left: 20px;
+    margin-right:40px;
+    padding-left: 30px;
 
-/*Container controls*/
-#container {
-      border-style: solid;
-      border-width: 1px;
-}
-
-#showResume {
-    border-radius: 25px
 }
 
 /*Bootstrap Jumbotron controls*/
-/*.jumbotron {
+.jumbotron {
     padding-left: 30px;
     padding-right: 60px;
-    height: 10px;  WHAT IS THIS DOING? It seems to lock it to the footer, but changing the number from 10px to 100px doesn't seem to make a difference
+    height: 10px;  /*WHAT IS THIS DOING? It seems to lock it to the footer, but changing the number from 10px to 100px doesn't seem to make a difference*/
     right: 300px;
-}*/
-
-/*.jumbotron p {
-    color: black;
-    text-align: right;
-}*/
-
-/*h3 controls*/
-#schoolWorkHistory {
-    text-decoration: underline;
-    margin-left: 10px;
 }
 
-/*About  Me controls*/
+.jumbotron p {
+    color: black;
+    text-align: right;
+}
+/*Underline all <h3>*/
+h3 {
+    text-decoration: underline;
+}
+
+#contactInfo {
+    text-align: center;
+}
+
+/*About Me*/
 .aboutme li {
     text-align:left;
 }
 
-/*Footer controls*/
+/*Footer Controls*/
 #footerBar {
-    height: 25px;
+    height: 30px;
     background-color: black;
     position: absolute;
     bottom: 0;
@@ -114,4 +106,3 @@ h2 {
     left: 0;
     text-align: center;
 }
-
