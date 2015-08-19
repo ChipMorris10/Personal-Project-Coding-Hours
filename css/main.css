@@ -1,3 +1,5 @@
+/*BODY CONTROLS*/
+
 /*html controls*/
 html {
     position: relative;
@@ -9,8 +11,16 @@ body {
     background-color: #fafafa;
     font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
     margin: 0 0 100px;  /*bottom is equal to footer height*/
-
 }
+
+/*HEADER CONTROLS */
+/*Center the <h1> text*/
+h1 {
+    text-align: center;
+    color: white;
+    padding-top: 1px;
+}
+
 /*Adds color and padding to nav bar items */
 .nav-pills {
     color: #00F;
@@ -22,12 +32,6 @@ body {
     background-color: #F90;
 }*/
 
-/*Center the <h1> text*/
-h1 {
-    text-align: center;
-    color: white;
-    padding-top: 1px;
-}
 
 .titleClass {
     display: inline-block;

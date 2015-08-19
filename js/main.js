@@ -5,13 +5,8 @@ console.log(endDate);
 
 $(document).on('ready', function() {
 
-// I put this in trying to figure out how I could get a animated gif to appear
-//     $('#galvanizeMin').hover(function() {
-//     console.log('enter');
-// }, function() {
-//     console.log('leave');
-// });
 
+// Click handler to show/hide my resume
 $('#schoolWorkHistory').hide();
 
     $("#schoolWorkHistory").on("click", function() {
@@ -23,11 +18,7 @@ $('#schoolWorkHistory').hide();
         $('#schoolWorkHistory').fadeIn("slow");
     });
 
-    // I want to get the hid resume button to work. Or do I? Why would I want to hide my resume?
-    // $("#showResume").on("click", function() {
-    //     $('#schoolWorkHistory').fadeOut("slow");
-    // });
-
+// Github API requirements
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -42,12 +33,6 @@ $(function() {
     }
   });
 });
-
-
-
-
-
-
 
     $.ajax({
         url: "https://api.github.com/authorizations",
