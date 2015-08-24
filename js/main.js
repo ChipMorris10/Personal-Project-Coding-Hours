@@ -15,7 +15,7 @@ $('#schoolWorkHistory').hide();
     });
 
     $("#showResume").on("click", function() {
-        $('#schoolWorkHistory').fadeIn("slow");
+        $('#schoolWorkHistory').fadeToggle("slow");
     });
 
 // Github API requirements
