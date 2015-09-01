@@ -1,22 +1,23 @@
 var count = 0;
 var startDate = '2015-07-06T09:30:46-0700';
 var endDate = new Date().toISOString();
-console.log(endDate);
+// console.log(endDate);
+var repoCount = 0;
 
 $(document).on('ready', function() {
 
 
 // Click handler to show/hide my resume
-$('#schoolWorkHistory').hide();
+// $('#schoolWorkHistory').hide();
 
-    $("#schoolWorkHistory").on("click", function() {
-        // $(".logos").hide();         // I DON'T THINK THIS IS NEEDED ANYMORE SINCE I GOT RID OF ALL THE LOGOS
-        $('.resume').show();
-    });
+//     $("#schoolWorkHistory").on("click", function() {
+//         // $(".logos").hide();         // I DON'T THINK THIS IS NEEDED ANYMORE SINCE I GOT RID OF ALL THE LOGOS
+//         $('.resume').show();
+//     });
 
-    $("#showResume").on("click", function() {
-        $('#schoolWorkHistory').fadeToggle("slow");
-    });
+//     $("#showResume").on("click", function() {
+//         $('#schoolWorkHistory').fadeToggle("slow");
+//     });
 
 // Github API requirements
 $(function() {
@@ -59,16 +60,21 @@ $(function() {
 
 function updateGithubCommits() {
     $.ajax({
-        url: 'https://api.github.com/user/repos',
+        // the default for showing count or repoCount is 30. I changed the number to 1000 below.
+        url: 'https://api.github.com/user/repos?page=1&per_page=1000',
         headers: {
             Authorization: "token " + localStorage.getItem("token")
         }
     }).done(function(data) {
         data.forEach(function(repo) {
+            repoCount ++
             countCommits(repo.name);
         });
         // COUNT IS SET
-        console.log(count);
+    $('#github p').html("I currently have " + repoCount + " repos and " + count + " commits on Github.");
+
+        // console.log(count);
+        // console.log(repoCount);
     });
 }
 
@@ -85,5 +91,8 @@ function countCommits(repoName) {
         console.log('no commits');
     });
 }
+
+
+
 
 

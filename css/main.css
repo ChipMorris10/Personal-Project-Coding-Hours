@@ -1,37 +1,41 @@
-/*BODY CONTROLS*/
-
-/*html controls*/
+/**************************/
+/* BODY CONTROLS */
+/*************************/
 html {
     position: relative;
     min-height: 100%;
 }
 
-/*Body controls*/
 body {
     background-color: #fafafa;
-    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
     margin: 0 0 100px;  /*bottom is equal to footer height*/
 }
 
-/*HEADER CONTROLS */
-/*Center the <h1> text*/
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
+
+/*****************************/
+/* HEADER CONTROLS */
+/****************************/
 h1 {
     text-align: center;
     color: white;
     padding-top: 1px;
 }
 
-/*Adds color and padding to nav bar items */
 .nav-pills {
     color: #00F;
     padding: 20px 20px 20px 20px;
 }
-
-/*Changes background color of menu on hover*/
-/*#headerBar .active  a:hover {
-    background-color: #F90;
-}*/
-
 
 .titleClass {
     display: inline-block;
@@ -40,7 +44,6 @@ h1 {
     margin-left: 15px;
 }
 
-/*Header controls*/
 #headerBar {
     height: 60px;
     background: black;
@@ -50,16 +53,30 @@ h1 {
 }
 
 
+/*********************************/
+/* SERVICES  CONTROLS */
+/********************************/
+#services {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background: #EBFFF5;
+}
 
-/*Border around gSchool hours*/
-/*.container {
-    border-style: solid;
-    border-width: 1px;
-}*/
 
-/*Logo spacing*/
+/*****************************/
+/* GITHUB  CONTROLS */
+/****************************/
+#github {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+/******************************/
+/* RESUME CONTROLS */
+/****************************/
 .logos {
-    /*padding-right: 50px;*/
+    padding-right: 50px;
     height: 50px;
     width:70px;
     margin-left: 15px;
@@ -68,59 +85,86 @@ h1 {
 #schoolWorkHistory {
     border-style: solid;
     border-width: 2px;
-    margin-left: 20px;
+    margin-left: 90px;
     margin-right:40px;
     padding-left: 30px;
-
 }
 
-/*Bootstrap Jumbotron controls*/
-.jumbotron {
-    padding-left: 30px;
-    padding-right: 60px;
-    height: 10px;  /*WHAT IS THIS DOING? It seems to lock it to the footer, but changing the number from 10px to 100px doesn't seem to make a difference*/
-    right: 300px;
+.btn-lg {
+    border-style: solid;
+    border-width: 2px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
-.jumbotron p {
-    color: black;
-    text-align: right;
-}
-/*Underline all <h3>*/
-h3 {
-    text-decoration: underline;
-}
-
-#contactInfo {
-    text-align: center;
-}
-
-/*About Me*/
-.aboutme li {
-    text-align:left;
-}
-
-/*Footer Controls*/
-#footerBar {
-    height: 30px;
-    background-color: black;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    left: 0;
-    text-align: center;
-}
-
-#services {
+#schoolWork {
     padding-top: 100px;
     padding-bottom: 100px;
     background: #EBFFF5;
 }
 
+.modal-title {
+    text-align: center;
+}
+
+#header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;
+    width: 570px;
+}
+
+#nav1 {
+    line-height:50px;
+    /*background-color:#eeeeee;*/
+    height:343px;
+    width:30px;
+    float:left;
+    padding:5px;
+    margin: 10px;
+}
+
+#section {
+    width:540px;
+    float:left;
+    padding:25px;
+    text-align: justify;
+}
 
 
 
-/*Helper classes*/
+/************************************/
+/* CONTACT ME CONTROLS */
+/**********************************/
+#contact {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 100px
+}
+
+.socialMediaCenter {
+   width: 300px;
+   height: 300px;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   margin-left: -150px;
+   margin-top: -150px;
+}
+
+hr.primary {
+    max-width: 50px;
+    border-color: #f05f40;
+    border-width: 1px;
+}
+
+
+/*****************************************/
+/* MISCELLANEOUS  CONTROLS */
+/**********************************(*****/
 .center {
     text-align: center;
 }
@@ -131,16 +175,26 @@ h3 {
 }
 
 
-
-
-/*section padding*/
-#github {
-    padding-top: 100px;
-    padding-bottom: 100px
+/******************************/
+/* FOOTER CONTROLS */
+/****************************/
+#footerBar {
+    height: 50px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 }
 
-#schoolWork {
-    padding-top: 100px;
-    padding-bottom: 100px
+/* Still needs work
+- Page is wider than the screen
+- Nav bar turn white(?) on scroll
+- Fix the Github button link
+- Figure out what goes in the Services area
+- Are the phone & mail icons there, just hidden
+- Formatting & commenting html
+- Live updating of coding hours
+*/
 
-}
+
