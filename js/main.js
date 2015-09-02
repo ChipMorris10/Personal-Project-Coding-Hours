@@ -1,26 +1,34 @@
-var count = 0;
 var startDate = '2015-07-06T09:30:46-0700';
 var endDate = new Date().toISOString();
 // console.log(endDate);
 var repoCount = 0;
+var commits = []
+callGitHub();
+var commitCount = 0;
+var count = 0;
+
+
+$(window).load(function() {
+        $('.loader').show();
+});
+
+
+$(window).scroll(function() {
+    if ($(document).scrollTop() > 199) {
+      $(".navbar-default").addClass("navBarColor");
+    } else {
+      $(".navbar-default").removeClass("navBarColor");
+    }
+  });
+
 
 $(document).on('ready', function() {
 
+});
 
-// Click handler to show/hide my resume
-// $('#schoolWorkHistory').hide();
-
-//     $("#schoolWorkHistory").on("click", function() {
-//         // $(".logos").hide();         // I DON'T THINK THIS IS NEEDED ANYMORE SINCE I GOT RID OF ALL THE LOGOS
-//         $('.resume').show();
-//     });
-
-//     $("#showResume").on("click", function() {
-//         $('#schoolWorkHistory').fadeToggle("slow");
-//     });
 
 // Github API requirements
-$(function() {
+function callGitHub () {
   $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
@@ -33,7 +41,7 @@ $(function() {
       }
     }
   });
-});
+};
 
     $.ajax({
         url: "https://api.github.com/authorizations",
@@ -53,10 +61,15 @@ $(function() {
     }).done(function(data){
         localStorage.setItem("token", data.token);
         updateGithubCommits();
+
     });
+
+
     console.log('sanity check!');
 
-});
+
+
+
 
 function updateGithubCommits() {
     $.ajax({
@@ -65,17 +78,20 @@ function updateGithubCommits() {
         headers: {
             Authorization: "token " + localStorage.getItem("token")
         }
-    }).done(function(data) {
+    }).done(function(data, cb) {
+        repoCount = data.length;
         data.forEach(function(repo) {
-            repoCount ++
             countCommits(repo.name);
-        });
-        // COUNT IS SET
-    $('#github p').html("I currently have " + repoCount + " repos and " + count + " commits on Github.");
 
+        });
+
+
+
+    // $('#github p').html("I currently have " + repoCount + " repos and " + addCommits() + " commits on Github.");
         // console.log(count);
         // console.log(repoCount);
     });
+
 }
 
 function countCommits(repoName) {
@@ -84,9 +100,18 @@ function countCommits(repoName) {
         headers: {
             Authorization: "token " + localStorage.getItem("token")
         },
-        async: false
+        async: true
     }).done(function(data) {
-        count += data.length;
+        commits.push(data);
+        commitCount += data.length;
+        count ++;
+
+        if(count === repoCount){
+            $('#github p').html("I currently have " + repoCount + " repos and " + commitCount + " commits on Github.");
+            $('.loader').hide();
+            }
+
+
     }).fail(function(data) {
         console.log('no commits');
     });
