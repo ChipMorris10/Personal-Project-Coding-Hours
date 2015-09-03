@@ -23,7 +23,7 @@ hr {
 }
 
 
-/*****************************/
+/******************************/
 /* HEADER CONTROLS */
 /****************************/
 h1 {
@@ -145,7 +145,6 @@ body {
     width: 15px;
   }
 }
-
 
 
 /***************************************/
@@ -272,13 +271,15 @@ hr.primary {
 }
 
 /* Still needs work
--
--
-- Fix the Github button link
-- Figure out what goes in the Services area
--
+- Move mail icon
+- Fill in Services area
 - Formatting & commenting html
 - Live updating of coding hours
 */
 
-
+/*#myCarousel {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+*/
